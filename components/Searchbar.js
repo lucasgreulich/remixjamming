@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import App from "../src/App";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, InputGroup, Container, Row, Card, FormControl } from 'react-bootstrap';
 
 const CLIENT_ID = "0324ee72c0e14508b46dcc01f7841c64";
 const CLIENT_SECRET="63bdb5009c97420b9f624217aa78c731";
