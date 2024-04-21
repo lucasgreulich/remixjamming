@@ -1,21 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import SearchBar from '../components/Searchbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
-
-
   return (
-    <>
-    <Container style={{textAlign:'center'}}>
-      <SearchBar/>
-      <PlayList/>
-      <Button>Save to Spotify</Button>
+    <div className='App'>
+      <Container>
+        <InputGroup className="mb-3" size="lg">
+          <FormControl
+            placeholder="Search For Artist"
+            type="input"
+            onKeyPress={event => {
+              if (event.key == "Enter") {
+                console.log("Pressed Enter");
+              }
+            }}
+            />
+        </InputGroup>
       </Container>
-    </>
+    </div>
   );
 }
 
